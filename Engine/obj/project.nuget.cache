@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mAxjgsnTCJU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lukas\\Downloads\\TickTick\\TickTick\\Engine\\Engine.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lukas\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
+  ],
+  "logs": []
+}
