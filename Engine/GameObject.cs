@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using System.Diagnostics;
 
 namespace Engine
 {
@@ -14,6 +15,8 @@ namespace Engine
             set { localPosition = value; }
         }
         protected Vector2 localPosition;
+
+        public bool isPlayerObject = false;
 
         /// <summary>
         /// The current velocity of this game object, in units per second.
@@ -58,6 +61,11 @@ namespace Engine
         /// <param name="gameTime">An object containing information about the time that has passed.</param>
         public virtual void Update(GameTime gameTime)
         {
+            if (isPlayerObject)
+            {
+                Camera.Instance.SetTarget(GlobalPosition, this);
+            }
+
             LocalPosition += velocity * (float)gameTime.ElapsedGameTime.TotalSeconds;
         }
 

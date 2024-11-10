@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
+using System.Diagnostics;
 
 namespace Engine
 {
@@ -46,6 +47,8 @@ namespace Engine
 
         public static string ContentRootDirectory { get { return "Content"; } }
 
+        private Camera camera;
+
         /// <summary>
         /// Creates a new ExtendedGame object.
         /// </summary>
@@ -58,6 +61,8 @@ namespace Engine
             // create the input helper and random number generator
             inputHelper = new InputHelper(this);
             Random = new Random();
+
+            camera = Camera.Instance; //cache camera for performance
 
             // default window and world size
             windowSize = new Point(1024, 768);
@@ -90,6 +95,8 @@ namespace Engine
         {
             HandleInput();
             GameStateManager.Update(gameTime);
+            camera.worldSize = worldSize;
+            camera.Update(gameTime);
         }
 
         /// <summary>
@@ -119,7 +126,7 @@ namespace Engine
             GraphicsDevice.Clear(Color.Black);
 
             // start drawing sprites, applying the scaling matrix
-            spriteBatch.Begin(SpriteSortMode.FrontToBack, null, null, null, null, null, spriteScale);
+            spriteBatch.Begin(SpriteSortMode.FrontToBack, null, null, null, null, null, camera.GetTransformMatrix() * spriteScale); 
 
             // let the game world draw itself
             GameStateManager.Draw(gameTime, spriteBatch);

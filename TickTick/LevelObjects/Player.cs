@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using System;
 
-class Player : AnimatedGameObject
+ class Player : AnimatedGameObject
 {
     const float walkingSpeed = 400; // Standard walking speed, in game units per second.
     const float jumpSpeed = 900; // Lift-off speed when the character jumps.
@@ -44,6 +44,8 @@ class Player : AnimatedGameObject
         LoadAnimation("Sprites/LevelObjects/Player/spr_celebrate@14", "celebrate", false, 0.05f);
         LoadAnimation("Sprites/LevelObjects/Player/spr_die@5", "die", true, 0.1f);
         LoadAnimation("Sprites/LevelObjects/Player/spr_explode@5x5", "explode", false, 0.04f);
+
+        isPlayerObject = true;
 
         Reset();
     }

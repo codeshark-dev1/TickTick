@@ -56,5 +56,10 @@ namespace Engine
         {
             gameObjects.Reset();
         }
+
+        public GameObjectList GetAllObjectsInState()
+        {
+            return gameObjects;
+        }
     }
 }

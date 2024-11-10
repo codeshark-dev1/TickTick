@@ -96,5 +96,10 @@ namespace Engine
             if (currentGameState != null)
                 currentGameState.Reset();
         }
+
+        public GameState GetCurrentState()
+        {
+            return currentGameState;
+        }
     }
 }

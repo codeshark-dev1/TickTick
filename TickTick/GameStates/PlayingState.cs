@@ -69,6 +69,7 @@ class PlayingState : GameState, IPlayingState
         if (level != null)
             level.Update(gameTime);
 
+
         // show or hide the "game over" image
         gameOverOverlay.Visible = !level.Player.IsAlive;
     }
@@ -83,7 +84,7 @@ class PlayingState : GameState, IPlayingState
     public void LoadLevel(int levelIndex)
     {
         level = new Level(levelIndex, ExtendedGame.ContentRootDirectory + "/Levels/level" + levelIndex + ".txt");
-
+        
         // hide the overlay images
         completedOverlay.Visible = false;
         gameOverOverlay.Visible = false;
