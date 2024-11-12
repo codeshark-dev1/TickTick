@@ -1,6 +1,7 @@
 ﻿using Engine;
 using Microsoft.Xna.Framework;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 
 partial class Level : GameObjectList
@@ -10,13 +11,24 @@ partial class Level : GameObjectList
         // open the file
         StreamReader reader = new StreamReader(filename);
 
-        // read the description
-        string description = reader.ReadLine();
+        reader.ReadLine();
+        int levelWidth = int.Parse(reader.ReadLine() ?? "0"); // Line 2
+        reader.ReadLine(); // Skip line 3
+        int levelHeight = int.Parse(reader.ReadLine() ?? "0"); // Line 4
+        reader.ReadLine(); // Skip line 5
+        int levelTimer = int.Parse(reader.ReadLine() ?? "0"); // Line 6
 
-        // read the rows of the grid; keep track of the longest row
+        Camera.Instance.InitializeLevel(levelWidth, levelHeight, levelTimer);
+
+        reader.ReadLine();
+        reader.ReadLine();
+
+        Debug.WriteLine("Level width:" + levelWidth + ", level height:" + levelHeight + ", level timer:" + levelTimer);
+
         int gridWidth = 0;
-
         List<string> gridRows = new List<string>();
+
+        string description = reader.ReadLine();
         string line = reader.ReadLine();
         while (line != null)
         {

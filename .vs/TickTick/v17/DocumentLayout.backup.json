@@ -1,0 +1,161 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lukas\\Desktop\\Folders\\Repos\\TickTick\\TickTick\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9D5D39-C5BB-4E73-AC5B-BD944B39D45E}|TickTick\\TickTick.csproj|c:\\users\\lukas\\desktop\\folders\\repos\\ticktick\\ticktick\\ticktick\\levelobjects\\bombtimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9D5D39-C5BB-4E73-AC5B-BD944B39D45E}|TickTick\\TickTick.csproj|solutionrelative:ticktick\\levelobjects\\bombtimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E713C9-DBA0-48FE-8EA5-2E41B883D74C}|Engine\\Engine.csproj|c:\\users\\lukas\\desktop\\folders\\repos\\ticktick\\ticktick\\engine\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E713C9-DBA0-48FE-8EA5-2E41B883D74C}|Engine\\Engine.csproj|solutionrelative:engine\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9D5D39-C5BB-4E73-AC5B-BD944B39D45E}|TickTick\\TickTick.csproj|c:\\users\\lukas\\desktop\\folders\\repos\\ticktick\\ticktick\\ticktick\\levelloading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9D5D39-C5BB-4E73-AC5B-BD944B39D45E}|TickTick\\TickTick.csproj|solutionrelative:ticktick\\levelloading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9D5D39-C5BB-4E73-AC5B-BD944B39D45E}|TickTick\\TickTick.csproj|c:\\users\\lukas\\desktop\\folders\\repos\\ticktick\\ticktick\\ticktick\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9D5D39-C5BB-4E73-AC5B-BD944B39D45E}|TickTick\\TickTick.csproj|solutionrelative:ticktick\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E713C9-DBA0-48FE-8EA5-2E41B883D74C}|Engine\\Engine.csproj|c:\\users\\lukas\\desktop\\folders\\repos\\ticktick\\ticktick\\engine\\visibilitytimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E713C9-DBA0-48FE-8EA5-2E41B883D74C}|Engine\\Engine.csproj|solutionrelative:engine\\visibilitytimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9D5D39-C5BB-4E73-AC5B-BD944B39D45E}|TickTick\\TickTick.csproj|c:\\users\\lukas\\desktop\\folders\\repos\\ticktick\\ticktick\\ticktick\\content\\levels\\level11.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9E9D5D39-C5BB-4E73-AC5B-BD944B39D45E}|TickTick\\TickTick.csproj|solutionrelative:ticktick\\content\\levels\\level11.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E713C9-DBA0-48FE-8EA5-2E41B883D74C}|Engine\\Engine.csproj|c:\\users\\lukas\\desktop\\folders\\repos\\ticktick\\ticktick\\engine\\extendedgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E713C9-DBA0-48FE-8EA5-2E41B883D74C}|Engine\\Engine.csproj|solutionrelative:engine\\extendedgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9D5D39-C5BB-4E73-AC5B-BD944B39D45E}|TickTick\\TickTick.csproj|c:\\users\\lukas\\desktop\\folders\\repos\\ticktick\\ticktick\\ticktick\\gamestates\\playingstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9D5D39-C5BB-4E73-AC5B-BD944B39D45E}|TickTick\\TickTick.csproj|solutionrelative:ticktick\\gamestates\\playingstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Level.cs",
+              "DocumentMoniker": "C:\\Users\\lukas\\Desktop\\Folders\\Repos\\TickTick\\TickTick\\TickTick\\Level.cs",
+              "RelativeDocumentMoniker": "TickTick\\Level.cs",
+              "ToolTip": "C:\\Users\\lukas\\Desktop\\Folders\\Repos\\TickTick\\TickTick\\TickTick\\Level.cs",
+              "RelativeToolTip": "TickTick\\Level.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T20:17:27.212Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LevelLoading.cs",
+              "DocumentMoniker": "C:\\Users\\lukas\\Desktop\\Folders\\Repos\\TickTick\\TickTick\\TickTick\\LevelLoading.cs",
+              "RelativeDocumentMoniker": "TickTick\\LevelLoading.cs",
+              "ToolTip": "C:\\Users\\lukas\\Desktop\\Folders\\Repos\\TickTick\\TickTick\\TickTick\\LevelLoading.cs",
+              "RelativeToolTip": "TickTick\\LevelLoading.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T20:21:02.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BombTimer.cs",
+              "DocumentMoniker": "C:\\Users\\lukas\\Desktop\\Folders\\Repos\\TickTick\\TickTick\\TickTick\\LevelObjects\\BombTimer.cs",
+              "RelativeDocumentMoniker": "TickTick\\LevelObjects\\BombTimer.cs",
+              "ToolTip": "C:\\Users\\lukas\\Desktop\\Folders\\Repos\\TickTick\\TickTick\\TickTick\\LevelObjects\\BombTimer.cs",
+              "RelativeToolTip": "TickTick\\LevelObjects\\BombTimer.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAD8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T20:17:01.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VisibilityTimer.cs",
+              "DocumentMoniker": "C:\\Users\\lukas\\Desktop\\Folders\\Repos\\TickTick\\TickTick\\Engine\\VisibilityTimer.cs",
+              "RelativeDocumentMoniker": "Engine\\VisibilityTimer.cs",
+              "ToolTip": "C:\\Users\\lukas\\Desktop\\Folders\\Repos\\TickTick\\TickTick\\Engine\\VisibilityTimer.cs",
+              "RelativeToolTip": "Engine\\VisibilityTimer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T20:16:54.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "level11.txt",
+              "DocumentMoniker": "C:\\Users\\lukas\\Desktop\\Folders\\Repos\\TickTick\\TickTick\\TickTick\\Content\\Levels\\level11.txt",
+              "RelativeDocumentMoniker": "TickTick\\Content\\Levels\\level11.txt",
+              "ToolTip": "C:\\Users\\lukas\\Desktop\\Folders\\Repos\\TickTick\\TickTick\\TickTick\\Content\\Levels\\level11.txt",
+              "RelativeToolTip": "TickTick\\Content\\Levels\\level11.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-12T20:15:42.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Camera.cs",
+              "DocumentMoniker": "C:\\Users\\lukas\\Desktop\\Folders\\Repos\\TickTick\\TickTick\\Engine\\Camera.cs",
+              "RelativeDocumentMoniker": "Engine\\Camera.cs",
+              "ToolTip": "C:\\Users\\lukas\\Desktop\\Folders\\Repos\\TickTick\\TickTick\\Engine\\Camera.cs",
+              "RelativeToolTip": "Engine\\Camera.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAD4v0cAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T21:17:38.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlayingState.cs",
+              "DocumentMoniker": "C:\\Users\\lukas\\Desktop\\Folders\\Repos\\TickTick\\TickTick\\TickTick\\GameStates\\PlayingState.cs",
+              "RelativeDocumentMoniker": "TickTick\\GameStates\\PlayingState.cs",
+              "ToolTip": "C:\\Users\\lukas\\Desktop\\Folders\\Repos\\TickTick\\TickTick\\TickTick\\GameStates\\PlayingState.cs",
+              "RelativeToolTip": "TickTick\\GameStates\\PlayingState.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAtwFYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T20:13:53.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExtendedGame.cs",
+              "DocumentMoniker": "C:\\Users\\lukas\\Desktop\\Folders\\Repos\\TickTick\\TickTick\\Engine\\ExtendedGame.cs",
+              "RelativeDocumentMoniker": "Engine\\ExtendedGame.cs",
+              "ToolTip": "C:\\Users\\lukas\\Desktop\\Folders\\Repos\\TickTick\\TickTick\\Engine\\ExtendedGame.cs",
+              "RelativeToolTip": "Engine\\ExtendedGame.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAkwOAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T21:17:33.333Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

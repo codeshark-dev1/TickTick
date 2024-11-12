@@ -1,3 +1,11 @@
+width:
+1440
+height:
+825
+timer:
+30
+
+-----------------------------------------
 Do not touch the flames, and watch how they move.
 ....................
 ....................

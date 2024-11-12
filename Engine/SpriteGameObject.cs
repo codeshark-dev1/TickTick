@@ -162,5 +162,10 @@ namespace Engine
             // otherwise, there is no collision
             return false;
         }
+
+        public float GetDepth()
+        {
+            return depth;
+        }
     }
 }

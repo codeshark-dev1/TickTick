@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.Design;
 using System.Diagnostics;
 using Microsoft.Xna.Framework;
 
@@ -6,7 +7,6 @@ namespace Engine
 {
     public class Camera
     {
-
         public Point position, windowSize, worldSize; //world size is total size of the level, set by ExtendedGame class, windowSize is the size of the world currently being displayed
         private Point startPosition = Point.Zero;
         private static Camera instance;
@@ -15,6 +15,7 @@ namespace Engine
         public Vector2 target;
 
         private float sizeXMultiplier = .5f, sizeYMultiplier = .5f, smoothSpeed = 0.1f;
+        public int levelTimer = 30;
 
         private Camera()
         {
@@ -38,19 +39,41 @@ namespace Engine
         {
             windowSize = new Point((int)(worldSize.X * sizeXMultiplier), (int)(worldSize.Y * sizeYMultiplier));
 
-            float clampedX = MathHelper.Clamp(target.X - windowSize.X / 2, 0, Math.Max(0, worldSize.X - windowSize.X));
-            float clampedY = MathHelper.Clamp(target.Y - windowSize.Y / 2, 0, Math.Min(0, -(worldSize.Y - windowSize.Y)));
+            float clampedX = 0;
+            float clampedY = 0;
+
+            if (targetObject != null && target.X * 0.9f < worldSize.X / 2)
+            {
+                clampedX = MathHelper.Clamp(target.X - windowSize.X / 2, 0, target.X);
+                clampedY = 0;
+            }else if ( targetObject != null && target.X * 0.9f >= worldSize.X / 2)
+            {
+                clampedX = worldSize.X / 4;
+                clampedY = 0;
+            }
+            else
+            {
+                clampedX = 0;
+                clampedY = 0;
+            }
+            
 
             Vector2 newPosition = new Vector2(clampedX, clampedY);
 
             position = Vector2.Lerp(position.ToVector2(), newPosition, smoothSpeed).ToPoint();
-            //Debug.WriteLine($"Position: {position}, target: {target}, moving towards: {newPosition} ");
         }
 
         public void SetTarget(Vector2 newTarget, GameObject obj)
         {
             target = newTarget;
             targetObject = obj;
+        }
+
+        public void InitializeLevel(int width, int height, int time)
+        {
+            worldSize.X = width;
+            worldSize.Y = height;
+            levelTimer = time; 
         }
 
         public Matrix GetTransformMatrix()

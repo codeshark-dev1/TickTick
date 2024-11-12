@@ -1,3 +1,11 @@
+width:
+1440
+height:
+825
+timer:
+30
+
+-----------------------------------------
 Avoid the rockets! You can jump through some platforms.
 ....................
 r...............X...

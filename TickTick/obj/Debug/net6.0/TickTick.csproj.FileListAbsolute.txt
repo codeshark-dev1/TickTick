@@ -183,3 +183,4 @@ C:\Users\lukas\Desktop\Folders\Repos\TickTick\TickTick\TickTick\obj\Debug\net6.0
 C:\Users\lukas\Desktop\Folders\Repos\TickTick\TickTick\TickTick\obj\Debug\net6.0\TickTick.pdb
 C:\Users\lukas\Desktop\Folders\Repos\TickTick\TickTick\TickTick\obj\Debug\net6.0\TickTick.genruntimeconfig.cache
 C:\Users\lukas\Desktop\Folders\Repos\TickTick\TickTick\TickTick\obj\Debug\net6.0\ref\TickTick.dll
+C:\Users\lukas\Desktop\Folders\Repos\TickTick\TickTick\TickTick\bin\Debug\net6.0\Content\Levels\level11.txt

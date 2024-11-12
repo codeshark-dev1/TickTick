@@ -25,6 +25,8 @@ namespace Engine
         /// </summary>
         protected Point windowSize;
 
+        private Point standardWorldSize = new Point(1440, 825);
+
         /// <summary>
         /// A matrix used for scaling the game world so that it fits inside the window.
         /// </summary>
@@ -95,7 +97,10 @@ namespace Engine
         {
             HandleInput();
             GameStateManager.Update(gameTime);
-            camera.worldSize = worldSize;
+            if (camera.worldSize != Point.Zero)
+            {
+                worldSize = camera.worldSize;
+            }
             camera.Update(gameTime);
         }
 
