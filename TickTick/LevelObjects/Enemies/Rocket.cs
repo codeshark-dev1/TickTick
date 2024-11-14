@@ -1,5 +1,6 @@
 ﻿using Engine;
 using Microsoft.Xna.Framework;
+using System;
 
 /// <summary>
 /// Represents a rocket enemy that flies horizontally through the screen.
@@ -49,8 +50,13 @@ class Rocket : AnimatedGameObject
         else if (!sprite.Mirror && BoundingBox.Left > level.BoundingBox.Right)
             Reset();
 
+        //if the player touches the rocket on the top sidde, the rocket dies
+        if (level.Player.CanCollideWithObjects && HasPixelPreciseCollision(level.Player) && level.Player.LocalPosition.Y <= startPosition.Y)
+            Reset();
+
         // if the rocket touches the player, the player dies
-        if (level.Player.CanCollideWithObjects && HasPixelPreciseCollision(level.Player))
+        else if (level.Player.CanCollideWithObjects && HasPixelPreciseCollision(level.Player))
             level.Player.Die();
+
     }
 }

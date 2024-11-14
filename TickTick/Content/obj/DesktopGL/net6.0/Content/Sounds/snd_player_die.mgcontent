@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/Users/lukas/Desktop/Folders/Repos/TickTick/TickTick/TickTick/Content/Sounds/snd_player_die.wav</SourceFile>
-  <SourceTime>2024-10-21T12:22:52.5632645+02:00</SourceTime>
+  <SourceTime>2024-11-12T19:15:55.124495+01:00</SourceTime>
   <DestFile>C:/Users/lukas/Desktop/Folders/Repos/TickTick/TickTick/TickTick/Content/bin/DesktopGL/Content/Sounds/snd_player_die.xnb</DestFile>
-  <DestTime>2024-11-10T22:17:46.3902201+01:00</DestTime>
+  <DestTime>2024-11-13T19:38:47.9059696+01:00</DestTime>
   <Importer>WavImporter</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>SoundEffectProcessor</Processor>

@@ -75,17 +75,9 @@ namespace Engine
                 obj.Reset();
         }
 
-        public List<SpriteGameObject> GetCurrentChildren()
+        public List<GameObject> GetCurrentChildren()
         {
-            List<SpriteGameObject> list = new List<SpriteGameObject>();
-            foreach (GameObject obj in children)
-            {
-                if (obj.GetType() == typeof(SpriteGameObject))
-                {
-                    list.Add((SpriteGameObject)obj);
-                }
-            }
-            return list;
+            return children;
         }
     }
 }

@@ -117,6 +117,8 @@ partial class Level : GameObjectList
             LoadSparkyEnemy(x, y);
         else if (symbol == 'A' || symbol == 'B' || symbol == 'C')
             LoadFlameEnemy(x, y, symbol);
+        else if (symbol == 'P')
+            LoadSpeedPowerup(x, y);
     }
 
     Tile CharToStaticTile(char symbol)
@@ -202,6 +204,11 @@ partial class Level : GameObjectList
         AddChild(enemy);
     }
 
+    void LoadSpeedPowerup(int x, int y)
+    {
+        SpeedPowerUp p = new SpeedPowerUp(this, GetCellPosition(x, y));
+        AddChild(p);
+    }
     Vector2 GetCellBottomCenter(int x, int y)
     {
         return GetCellPosition(x, y + 1) + new Vector2(TileWidth / 2, 0);

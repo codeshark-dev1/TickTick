@@ -57,7 +57,10 @@ class PlayingState : GameState, IPlayingState
                 level.HandleInput(inputHelper);
 
                 if (quitButton.Pressed)
+                {
+                    Camera.Instance.Reset();
                     ExtendedGame.GameStateManager.SwitchTo(ExtendedGameWithLevels.StateName_LevelSelect);
+                }
             }
         }
     }
@@ -92,6 +95,8 @@ class PlayingState : GameState, IPlayingState
 
     public void LevelCompleted(int levelIndex)
     {
+        Camera.Instance.Reset();
+
         // show an overlay image
         completedOverlay.Visible = true;
 

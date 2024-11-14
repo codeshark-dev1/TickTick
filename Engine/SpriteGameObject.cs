@@ -60,9 +60,17 @@ namespace Engine
             if (!Visible)
                 return;
 
-            // draw the sprite at its *global* position in the game world
+            Vector2 drawPosition = GlobalPosition;
+
+            if (depth >= 0.9f)
+            {
+                drawPosition += Camera.Instance.position.ToVector2(); //offsets UI elements to make sure they remain at the same position
+            }
+
             if (sprite != null)
-                sprite.Draw(spriteBatch, GlobalPosition, Origin);
+            {
+                sprite.Draw(spriteBatch, drawPosition, Origin);
+            }
         }
 
         /// <summary>

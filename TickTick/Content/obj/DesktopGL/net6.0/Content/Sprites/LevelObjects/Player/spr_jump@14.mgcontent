@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/Users/lukas/Desktop/Folders/Repos/TickTick/TickTick/TickTick/Content/Sprites/LevelObjects/Player/spr_jump@14.png</SourceFile>
-  <SourceTime>2024-10-21T12:22:53.1256423+02:00</SourceTime>
+  <SourceTime>2024-11-12T19:15:55.6568002+01:00</SourceTime>
   <DestFile>C:/Users/lukas/Desktop/Folders/Repos/TickTick/TickTick/TickTick/Content/bin/DesktopGL/Content/Sprites/LevelObjects/Player/spr_jump@14.xnb</DestFile>
-  <DestTime>2024-11-10T22:17:47.8190291+01:00</DestTime>
+  <DestTime>2024-11-13T19:38:49.4199638+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

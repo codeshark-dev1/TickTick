@@ -19,6 +19,7 @@ using System;
     bool isGrounded; // Whether or not the character is currently standing on something.
     bool standingOnIceTile, standingOnHotTile; // Whether or not the character is standing on an ice tile or a hot tile.
     float desiredHorizontalSpeed; // The horizontal speed at which the character would like to move.
+    float movementSpeedFactor = 1; // Factor by which the movementspeed gets multiplied
 
     Level level;
     Vector2 startPosition;
@@ -78,14 +79,14 @@ using System;
         if (inputHelper.KeyDown(Keys.Left))
         {
             facingLeft = true;
-            desiredHorizontalSpeed = -walkingSpeed;
+            desiredHorizontalSpeed = -walkingSpeed * movementSpeedFactor;
             if (isGrounded)
                 PlayAnimation("run");
         }
         else if (inputHelper.KeyDown(Keys.Right))
         {
             facingLeft = false;
-            desiredHorizontalSpeed = walkingSpeed;
+            desiredHorizontalSpeed = walkingSpeed * movementSpeedFactor;
             if (isGrounded)
                 PlayAnimation("run");
         }
@@ -310,5 +311,10 @@ using System;
 
         // stop moving
         velocity = Vector2.Zero;
+    }
+
+    public void SpeedUp(float factor = 1)
+    {
+        movementSpeedFactor = factor;
     }
 }

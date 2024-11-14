@@ -56,8 +56,6 @@ namespace Engine
                 clampedX = 0;
                 clampedY = 0;
             }
-            
-
             Vector2 newPosition = new Vector2(clampedX, clampedY);
 
             position = Vector2.Lerp(position.ToVector2(), newPosition, smoothSpeed).ToPoint();
@@ -79,6 +77,15 @@ namespace Engine
         public Matrix GetTransformMatrix()
         {
             return Matrix.CreateTranslation(new Vector3(-position.X, -position.Y, 0)); //returns the translation matrix by which the camera should be off set to only display the part of the screen we want to display
+        }
+
+        public void Reset()
+        {
+            worldSize = Point.Zero;
+            levelTimer = 0;
+            position = Point.Zero;
+            targetObject = null;
+            target = Vector2.Zero;
         }
     }
 }

@@ -72,11 +72,18 @@ namespace Engine
             if (!Visible)
                 return;
 
+            Vector2 drawPosition = GlobalPosition;
+
+            if (depth >= 0.9f)
+            {
+                drawPosition += Camera.Instance.position.ToVector2();
+            }
+
             // calculate the origin
             Vector2 origin = new Vector2(OriginX, 0);
 
             // draw the text
-            spriteBatch.DrawString(font, Text, GlobalPosition,
+            spriteBatch.DrawString(font, Text, drawPosition,
                 Color, 0f, origin, 1, SpriteEffects.None, depth);
         }
 
