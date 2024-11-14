@@ -19,6 +19,8 @@ namespace Engine
         /// </summary>
         public Vector2 Origin { get; set; }
 
+        private float backgroundParallaxMultiplier = 0.1f, mountainsParallaxMultiplier = 0.05f;
+
         /// <summary>
         /// The sheet index of the attached sprite sheet.
         /// </summary>
@@ -62,7 +64,14 @@ namespace Engine
 
             Vector2 drawPosition = GlobalPosition;
 
-            if (depth >= 0.9f)
+            if (depth == 0) //moves background sprites with camera to create parallax effect
+            {
+                drawPosition -= Camera.Instance.position.ToVector2() * backgroundParallaxMultiplier;
+            }else if (depth > 0 && depth < 0.5f)
+            {
+                drawPosition -= Camera.Instance.position.ToVector2() * mountainsParallaxMultiplier;
+            }
+            else if (depth >= 0.9f)
             {
                 drawPosition += Camera.Instance.position.ToVector2(); //offsets UI elements to make sure they remain at the same position
             }
